@@ -22,6 +22,42 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz#ecda5712b61ac852c760d8b3c79c96adca5554e5"
   integrity sha512-eYm8vijH/hpzr/6/1CJ/V/Eb1xQFW2nnUKArb3z+yUWv7HTwj6M7SP957oMjfZjAHU6qpoNc2wQvIxBLWYa/Jg==
 
+"@fullcalendar/core@~6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-6.1.1.tgz#4638000451941d4ccc6ee8920dbea99ce15b9f68"
+  integrity sha512-im5Dbgi/d7Q8DEUFuLaInL/TG+CrRH+zePq58LrKyFFoJKkx2CP+OS29ijVBnUiGyzCWtZ9lMIzLmWDzIMnJ0A==
+  dependencies:
+    preact "^10.0.5"
+
+"@fullcalendar/daygrid@~6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-6.1.1.tgz#518e8fa70eec590c4df47e788101551c8e42714e"
+  integrity sha512-/yIrN3IZSdob/UvAaPqWzBqyaQf3+DdcGG7xocVpmt2MudFbTpstF+ffPdBAQWqoWoB18Q92s6fn9teva5nDwA==
+
+"@fullcalendar/interaction@~6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/interaction/-/interaction-6.1.1.tgz#79c2fca08790a0e9b7a265c0c5dc92861c3e82d2"
+  integrity sha512-eJjdBu/ytX4EuV1mAr6mlB9mPhn80uNpuZz0eXjklYbjFNra9VVrEyNpC7kJiqsajGqQxQekbR2mk+SUJA/rzA==
+
+"@fullcalendar/list@~6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/list/-/list-6.1.1.tgz#74cecbe29bbeacbbc7a0a912823af37e10c13fe5"
+  integrity sha512-JHhjIREGDYdmoPdniP6fNDypuAXwVZkouWUSD8/8CMmgHAICPuME95ttVZNTmvsE6Jbv1NY4VGoUkTpBGlfG+g==
+
+"@fullcalendar/multimonth@~6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/multimonth/-/multimonth-6.1.1.tgz#0ded7b29f27abdfb61cc65b5f967840454e9288b"
+  integrity sha512-Y77aZTYOc7w/JAINetIdAf2GOvVt/K3m+qDBRdvojnU71CpxGsqoqhxP4Ep/O6w4BsaNlxWp6YMD57z4q29g4g==
+  dependencies:
+    "@fullcalendar/daygrid" "~6.1.1"
+
+"@fullcalendar/timegrid@~6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/timegrid/-/timegrid-6.1.1.tgz#1ad24cd1fd9e8aa4374dd3dbb3e6ba680214651a"
+  integrity sha512-JWjSxjxCBxIhkLsKT1uQmRWUHqfQWjtXJIy25Ur0jPlTHSLne5CBAyW2UWPwdV0nXpUnN5QWXjjTVLpMJB6uNA==
+  dependencies:
+    "@fullcalendar/daygrid" "~6.1.1"
+
 "@mdi/font@^6.4.95":
   version "6.5.95"
   resolved "https://registry.yarnpkg.com/@mdi/font/-/font-6.5.95.tgz#203922f6dd46397de9eb1f5956b85339adb6344d"
@@ -365,10 +401,17 @@ footable@^2.0.6:
   dependencies:
     jquery ">=1.4.4"
 
-fullcalendar@3.10.3:
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/fullcalendar/-/fullcalendar-3.10.3.tgz#b96c335b6fd4d76147783500418ae32aca771930"
-  integrity sha512-fZiDIIkhZ7fwTYfWYHzzCmS2zPKK8VMMG/MZzuvr7ANjajmptsxcwa9xLHZP5mKMDO8duhFkVfPATKnnQeGdgQ==
+fullcalendar@6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/fullcalendar/-/fullcalendar-6.1.1.tgz#1c0ccd0d5c4191fef2f51c71aead9cee7e493e9f"
+  integrity sha512-xbbQ1KHC7ENAHEfm+7jtNf71XEjhB1buJldeKWDVhCOt/RopaZcC0MnE32uIQZ9Ey4iTQAkhlECn1NZb1OO9HA==
+  dependencies:
+    "@fullcalendar/core" "~6.1.1"
+    "@fullcalendar/daygrid" "~6.1.1"
+    "@fullcalendar/interaction" "~6.1.1"
+    "@fullcalendar/list" "~6.1.1"
+    "@fullcalendar/multimonth" "~6.1.1"
+    "@fullcalendar/timegrid" "~6.1.1"
 
 gantt-elastic@^1.0.12:
   version "1.0.12"
@@ -561,6 +604,11 @@ popper.js@^1.15.0, popper.js@^1.16.0:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
+
+preact@^10.0.5:
+  version "10.11.3"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.11.3.tgz#8a7e4ba19d3992c488b0785afcc0f8aa13c78d19"
+  integrity sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==
 
 promise@^7.1.1:
   version "7.3.1"
